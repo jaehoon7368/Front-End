@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Test1_221121</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+            <label for="text"><li>납품자명(필수) : </label>
+            <input type="text" name="userId" id="userId" maxlength="8" minlength="3" required></li>
+            <br>
+
+            <label for="text"><li>email(필수) : </label>
+            <input type="email" name="email" id="email" placeholder="answer@naver.com" required></li>
+
+            <br>
+            <label for="homepage"><li>홈페이지 : </label>
+            <input type="url" name="homepage" id="homepage" value="http://"></li>
+            
+
+            <br>
+            <div>
+                <label for="local"><li>지역 : </label>
+                <select name="local" id="local">지역
+                <optgroup label="한국">
+                    <option value="seoul">서울</option>
+                    <option value="busan">부산</option>
+                </optgroup>
+                <optgroup label="중국">
+                    <option value="Beijing">북경</option>
+                    <option value="Shanghai">상해</option>
+                </optgroup>
+            </select>
+            
+            </div>
+        </ol>
+        </fieldset>
+        <fieldset>
+            <legend>납품정보</legend>
+            <ol style = "list-style: disc;">
+            <label for="text"><li> 상품명(필수) : </label>
+            <input type="text" name="productName" id="productName" required></li>
+            <br>
+            <label for="amount"><li> 납품수량(필수) : </label>
+            <input type="number" name="amount" id="amount" min="100" placeholder="최소 100"></li>
+
+            <br>
+            <label for="grade"><li>납품등급(필수)</label>
+                <input type="range" name="grade" id="grade" min="0" max="100" step="10"> 
+
+            <br>
+            <li><label for="memo">기타사항</label>
+            <textarea name="memo" id="memo" cols="20" rows="5"></textarea></li>
+
+        </fieldset>
+    </ol>
+        <button type="submit">send message</button>
+    </form>
+</body>
+</html>
